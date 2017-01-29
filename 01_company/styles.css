@@ -2,25 +2,24 @@
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
 }
 
 body {
-	/*background: gray;*/
+	background: #ffffff url(img/bg.jpg) repeat-x;
 	font: 12px/1.5 Arial, sans-serif;
 }
 
 .container {
-	width: 752px;
+	width: 755px;
 	margin: 0 auto;
 }
 
-.center-image {
+.logo {
 	display: block;
-	margin: 25px auto 20px auto;
+	margin: 10px auto 20px auto;
 }
 
-
+/* navigation */
 nav ul {
 	overflow: hidden;
 	font-size: 14px;
@@ -31,30 +30,87 @@ nav ul {
 	margin-bottom: 18px;
 }
 
+nav ul .active a{
+	color: #ffffff;
+	background-color: #a3e8f3;
+}
+
 nav ul li {
 	float: left;
 	list-style: none;
-	padding: 8px 28px;
-	border-left: 1px solid #f3f3f3;
 }
 
 nav ul li a {
+	display: block;
 	color: #5f5d67;
 	text-decoration: none;
+	font: 14px Arial, sans-serif;
+	padding: 8px 25px;
+	border-left: 1px solid #f3f3f3;
+	font-weight: bold;
 }
 
+nav ul li:hover a{
+	text-decoration: underline;
+	color: #ffffff;
+	background-color: #008def;
+}
+
+/* banner???? */
+.photos img{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+
+/* main articel*/
 article {
-	width: 476px;
+	background-color: #ffffff;
+	width: 420px;
 	float: left;
-	padding: 24px;
+	padding: 25px;
+	color: #555555;
+	min-height: 280px;
 }
 
+article h1 {
+	font: 24px "Times New Roman", Times, serif;;
+	margin-bottom: 18px;
+}
+
+article p {
+	margin-bottom: 18px;
+}
+
+article p:last-child {
+	margin-top: 36px;
+}
+
+/* aside - contact information */
 aside {
-	width: 264px;
+	background-color: #ffffff;
+	width: 220px;
 	float: right;
-	padding: 24px;
+	padding: 25px 0 25px 25px;
+	color: #333333;
+	min-height: 280px;
 }
 
+aside h2 {
+	font: 24px Georgia, Times, serif; ;
+	margin-bottom: 18px;
+}
+
+aside p {
+	font: 14px "Trebuchet MS", Helvetica, sans-serif;
+	margin-bottom: 18px;
+}
+
+
+/* footer :) */
 footer {
 	clear: both;
+	padding: 10px 0 40px;
+	color: #b4b3b6;
 }
