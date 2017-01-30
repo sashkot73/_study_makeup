@@ -4,45 +4,51 @@
 	<meta charset="UTF-8">
 	<title>Simple blog</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="container">
-		<header>
-			<img src="img/logo.png" alt="logo">
-			<nav id="main-menu">
-				<a href="#">Journal</a>
+	<header>
+		<div class="wrapper">
+			<a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+			<nav class="main-menu">
+				<a href="#" class="active">Journal</a>
 				<a href="#">About</a>
 				<a href="#">Work</a>
 				<a href="#">Contact</a>
 			</nav>
-		</header>
+		</div>
+	</header>
 
+	<div class="wrapper wrapper-border">
 		<main class="main-content">
 			<article class="main-article">
-				<img src="img/pic1.jpg" alt="">
-
-				<h2>Duis aute irure dolor in henderit in voluptate.</h2>
-
-				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-
-				<button class="btn-cont-read">Continue Reading</button>
+				<img src="img/pic1.jpg" alt="" class="article-pict">
+		
+				<div class="article-content">
+					<h2>Duis aute irure dolor in henderit in voluptate.</h2>
+							
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+							
+					<button class="btn-cont-read">Continue Reading</button>
+				</div>
 			</article>
-
+		
 			<article class="main-article">
 				<img src="img/pic2.jpg" alt="">
 					
 				<h2>Duis aute irure dolor in henderit in voluptate.</h2>
-
+		
 				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+		
 				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-
+		
 				<button class="btn-cont-read">Continue Reading</button>
 			</article>
 		</main>
-
+		
 		<aside>
 			<div class="aside-sect">
 				<h3>Search</h3>
@@ -64,16 +70,19 @@
 			</div>
 			<img src="img/banner.jpg" alt="" class="banner">
 		</aside>
-
+		
 		<div class="articles-nav">
-			<span class="nav-prev">&larr; Previous</span>
-			<span class="nav-next">&rarr; Next</span>
+			<a href="#" class="nav-prev">&larr; Previous</a>
+			<a href="#" class="nav-next">Next &rarr; </a>
 		</div>
-		<footer>
-			<img src="img/logo_bottom.png" alt="">
-			<p>&copy; 2016 Blogin.com&#32;&#32;-&#32;&#32;All Rights Reserved&#32;&#32;-&#32;&#32;Find more free Templates at Pixelhint.com</p>
-		</footer>
 	</div>
+
+	<footer>
+		<div class="wrapper">
+			<a href="#"><img src="img/logo_bottom.png" alt=""></a>
+			<p>&copy; 2016 Blogin.com&#32;&#32;-&#32;&#32;All Rights Reserved&#32;&#32;-&#32;&#32;  Find more free Templates at Pixelhint.com</p>
+		</div>
+	</footer>
 	
 </body>
 </html>
