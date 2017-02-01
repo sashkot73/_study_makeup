@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Simple blog</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -10,7 +11,7 @@
 <body>
 	<header>
 		<div class="wrapper">
-			<a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+			<a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
 			<nav class="main-menu">
 				<a href="#" class="active">Journal</a>
 				<a href="#">About</a>
@@ -21,9 +22,9 @@
 	</header>
 
 	<div class="wrapper wrapper-border">
-		<main class="main-content">
-			<article class="main-article">
-				<img src="img/pic1.jpg" alt="" class="article-pict">
+		<main>
+			<article>
+				<img src="img/pic1.jpg" alt="">
 		
 				<div class="article-content">
 					<h2>Duis aute irure dolor in henderit in voluptate.</h2>
@@ -36,27 +37,29 @@
 				</div>
 			</article>
 		
-			<article class="main-article">
+			<article>
 				<img src="img/pic2.jpg" alt="">
 					
-				<h2>Duis aute irure dolor in henderit in voluptate.</h2>
-		
-				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-		
-				<button class="btn-cont-read">Continue Reading</button>
+				<div class="article-content">
+					<h2>Duis aute irure dolor in henderit in voluptate.</h2>
+							
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+							
+					<button class="btn-cont-read">Continue Reading</button>
+				</div>
 			</article>
 		</main>
 		
 		<aside>
 			<div class="aside-sect">
 				<h3>Search</h3>
-				<input type="text" placeholder="What are you looking for?" class="input-search">
+				<input type="text" placeholder="What are you looking for?" class="input input-search">
 			</div>
 			<div class="aside-sect">
 				<h3>categories</h3>
-				<ul>
+				<ul class="cat-list">
 					<li><a href="#">Weekend</a></li>
 					<li><a href="#">Nature</a></li>
 					<li><a href="#">Work</a></li>
@@ -65,8 +68,10 @@
 			</div>
 			<div class="aside-sect">
 				<h3>Stay Tuned.</h3>
-				<input type="text" placeholder="Your Email" class="input-email">
-				<a href="#"><img src="img/continue.png" alt=""></a>
+				<div class="input-wrapper">
+					<input type="text" placeholder="Your Email" class="input input-email">
+					<a href="#" class="icon-go"><img src="img/continue.png" alt=""></a>
+				</div>
 			</div>
 			<img src="img/banner.jpg" alt="" class="banner">
 		</aside>
