@@ -1,0 +1,83 @@
+@font-face {
+ font-family: "Myriad Pto";
+ src: url("./fonts/MyriadPro-Regular.otf") format("otf");
+}
+
+
+body {
+	font-family: sans-serif;
+	font-family: 'Myriad Pro', sans-serif;
+	min-width: 940px;
+}
+
+
+.wrapper {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear:both;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	background: url(../img/bg.jpg) no-repeat top center;
+}
+
+.top img {
+	margin-top: 36px;
+}
+.menu {
+	float: right;
+	margin-top: 50px;
+	/*padding-top: 50px;*/
+}
+
+.menu ul li {
+	float: left;
+	margin: 0;
+	padding: 0px 15px;
+}
+.menu a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.wow {
+	padding: 160px 0 340px;
+	color: #fff;
+	text-align: center;
+}
+.wow .slogan {
+	font-size: 40px;
+	font-style: italic;
+}
+h1 {
+	font-size: 75px;
+	font-weight: bold;
+	margin: 30px 0 40px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.wow a {
+	display: block;
+	width: 240px;
+	background: #fed136;
+	text-align: center;
+	padding: 25px 0;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 auto;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
